@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.slick-slider .slick-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+body .slick-dots {
+  bottom: -38px;
+  left: 40px;
+  text-align: left;
+}
+
+body .slick-dots li,  body .slick-dots li button {
+  width: 32px;
+}
+
+body .slick-dots li button:before {
+  background-color: #dce0e3;
+  border-radius: 4px;
+  content: "";
+  height: 8px;
+  margin-right: 10px;
+  opacity: 1;
+  transition: width .3s linear,background-color .3s linear;
+  width: 32px;
+}
+
+body .slick-dots li.slick-active, body .slick-dots li.slick-active button {
+  width: 50px;
+}
+
+body .slick-dots li.slick-active button:before {
+  background-color: #9aa6af;
+  width: 50px;
+}
+
+.slick-dots li button:focus:before, .slick-dots li button:hover:before {
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+  opacity: .75;
+}
+
+.img-blog {
+    background: #ebebeb;
+    border-radius: 15px;
+    color: #757575;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    min-height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: #f05123;
+  color: #fff;
+}
+
+.auth-logo {
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+@keyframes slide-top-course {
+  0% {
+    transform: translate(-50% ,20px);
+  }
+  100% {
+    transform: translateY(-50%, -50%);
+  }
+}
+
+@keyframes slide-out-course {
+  0% {
+    transform: translateY(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50% ,20px);
+  }
+}
